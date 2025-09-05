@@ -52,4 +52,5 @@ apply number formats: #,##0 for units; "$"#,##0.00 for revenue,
 
 insert BarChart on Summary (X = regions, Y = revenue_sum)
 """
+import csv
 
