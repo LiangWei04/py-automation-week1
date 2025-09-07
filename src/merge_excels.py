@@ -65,7 +65,7 @@ def main():
                 sys.exit(f"Error: Header mismatch in file {f}. "
                          f"Expected {expected_headers}, got {list(df_part.columns)}")
 
-        all_parts.append(df_part)
+        all_part.append(df_part)
     df_merged = pd.concat(all_part, ignore_index=True)
     df_merged.to_excel(out_path, index=False)
     print("Merging...")
